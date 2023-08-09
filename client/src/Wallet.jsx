@@ -1,3 +1,4 @@
+import { useState } from "react";
 import server from "./server";
 
 function Wallet({ address, setAddress, balance, setBalance }) {
@@ -25,6 +26,7 @@ function Wallet({ address, setAddress, balance, setBalance }) {
 
       <div className="balance">Balance: {balance}</div>
     </div>
+    
   );
 }
 
