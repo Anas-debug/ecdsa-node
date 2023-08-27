@@ -1,0 +1,23 @@
+{
+  "name": "ecdsa-node",
+  "version": "1.0.0",
+  "description": "This project is an example of using a client and server to facilitate transfers between different addresses. Since there is just a single server on the back-end handling transfers, this is clearly very centralized. We won't worry about distributed consensus for this project.",
+  "main": "generatekey.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anas-debug/ecdsa-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anas-debug/ecdsa-node/issues"
+  },
+  "homepage": "https://github.com/Anas-debug/ecdsa-node#readme",
+  "dependencies": {
+    "inquirer": "^9.2.10"
+  }
+}
