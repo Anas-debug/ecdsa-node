@@ -1,6 +1,5 @@
-const fs = require('fs');
-const crypto = require('crypto');
-
+import fs from 'fs';
+import crypto from 'crypto';
 
 function generateAes256CbcKey() {
   // Generate a random 32-byte key.
