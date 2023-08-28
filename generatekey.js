@@ -56,3 +56,8 @@ function generateEnvFile(key, value) {
 
 generateEnvFile('AES_256_CBC_KEY', appKey);
  
+
+export {
+  generateAes256CbcKey,
+  generateEnvFile,
+};
