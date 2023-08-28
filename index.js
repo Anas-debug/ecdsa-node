@@ -1,6 +1,9 @@
-import { generateAes256CbcKey } from './generatekey.js';
-import { selectDirectories } from './selectDirectories.js';
+import { generateEnvFile } from "./generatekey.js";
+import { selectDirectories } from "./selectDirectories.js";
+import { appKey } from "./generatekey.js";
 
 
 selectDirectories();
-generateAes256CbcKey();
+generateEnvFile('AES_256_CBC_KEY', appKey, 'client', 'server');
+
+

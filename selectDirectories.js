@@ -34,6 +34,7 @@ async function selectDirectories() {
   console.log('Selected directories:');
   console.log('Directory 1:', dir1);
   console.log('Directory 2:', dir2);
+  // return { dir1, dir2 };
 }
 
 export{

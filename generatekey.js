@@ -44,20 +44,23 @@ const decryptedMessage = decrypt(encryptedMessage, key, iv);
 console.log('Decrypted Message:', decryptedMessage);
 
 
-function generateEnvFile(key, value) {
+function generateEnvFile(key, value, dir1, dir2) {
   // Create a new file called `.env` in the current directory.
-  fs.writeFileSync(".env", "");
+  for(dir of [dir1, dir2]) {
+    fs.writeFileSync(`${dir}/.env`, "");
+    console.log(`environment variable ${key}:${value} generated.`);
+      fs.appendFileSync("dir/.env", `${key}=${value}\n`, {
+        encoding: "utf-8",
+      });
+  }
 
-  console.log(`environment variable ${key}:${value} generated.`);
-    fs.appendFileSync(".env", `${key}=${value}\n`, {
-      encoding: "utf-8",
-    });
 }
 
-generateEnvFile('AES_256_CBC_KEY', appKey);
+// generateEnvFile('AES_256_CBC_KEY', appKey);
  
 
 export {
   generateAes256CbcKey,
   generateEnvFile,
+  appKey
 };
