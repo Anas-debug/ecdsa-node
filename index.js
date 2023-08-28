@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 import { generateEnvFile } from "./generatekey.js";
 import { selectDirectories } from "./selectDirectories.js";
 import { appKey } from "./generatekey.js";
-=======
 import inquirer from 'inquirer';
 import fs from 'fs';
 import path from 'path';
->>>>>>> parent of c7c03c9... refractored app to index.js entry
 
 async function selectDirectories() {
   const questions = [
