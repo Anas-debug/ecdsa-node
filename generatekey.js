@@ -62,5 +62,4 @@ function generateEnvFile(key, value, dir1, dir2) {
 export {
   generateAes256CbcKey,
   generateEnvFile,
-  appKey
 };
